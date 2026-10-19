@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#scoreDisplay {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#hintBox {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hint {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+#guessArea {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#guessInput {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+#guessInput:focus {
+    border-color: #667eea;
+}
+
+#guessButton {
+    padding: 12px 24px;
+    font-size: 16px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#guessButton:hover {
+    background: #5568d3;
+}
+
+#feedback {
+    text-align: center;
+    min-height: 20px;
+    margin-bottom: 10px;
+}
+
+.feedback-right {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.feedback-wrong {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+#gameOverScreen {
+    text-align: center;
+}
+
+#finalScore {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #333;
+}
+
+#playAgainButton {
+    padding: 12px 24px;
+    font-size: 16px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#playAgainButton:hover {
+    background: #5568d3;
+}

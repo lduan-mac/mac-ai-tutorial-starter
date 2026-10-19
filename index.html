@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WNBA Player Guesser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏀 WNBA Player Guesser</h1>
+
+        <div id="gameArea">
+            <div id="scoreDisplay">Round <span id="currentRound">1</span> of 5 | Score: <span id="score">0</span></div>
+
+            <div id="hintBox">
+                <p id="hint">Loading...</p>
+            </div>
+
+            <div id="guessArea">
+                <input type="text" id="guessInput" placeholder="Enter player name..." />
+                <button id="guessButton">Guess</button>
+            </div>
+
+            <div id="feedback"></div>
+        </div>
+
+        <div id="gameOverScreen" style="display:none;">
+            <h2>Game Over!</h2>
+            <p id="finalScore">Your score: 0 / 20</p>
+            <button id="playAgainButton">Play Again</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
