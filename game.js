@@ -79,13 +79,14 @@ function clearInputs() {
 function makeGuess() {
     const guess = document.getElementById('guessInput').value.trim().toLowerCase();
     const correctName = players[currentPlayerIndex].name.toLowerCase();
+    const lastNameOnly = correctName.split(' ').pop(); // Get last name only
 
     if (!guess) {
         document.getElementById('feedback').textContent = 'Please enter a name!';
         return;
     }
 
-    if (guess === correctName) {
+    if (guess === correctName || guess === lastNameOnly) {
         // Correct guess!
         const points = Math.max(0, 4 - currentHintLevel);
         score += points;
