@@ -6,7 +6,16 @@ You don't need an idea yet. Claude will help you find one.
 
 ## My project
 
-Nothing yet! Claude will help you describe your project here.
+**🏀 WNBA Player Guesser**
+
+A fun guessing game to test your knowledge of WNBA stars! The game shows you hints about a player and you guess their name. Each correct guess earns points—more points if you guess early with fewer hints. Play 5 rounds and try to score as high as possible!
+
+**Features:**
+- 12 WNBA players to guess
+- 4 hint levels per player (hardest to easiest)
+- 5-round game with scoring system (4 points for hint 1, down to 1 point for hint 4)
+- Clean, colorful web interface
+- Play again button to test your skills
 
 ## Before you start
 
